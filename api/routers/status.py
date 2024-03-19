@@ -35,3 +35,4 @@ async def kill_dino(
     feed_body: status_schema.FeedRequest, db: AsyncSession = Depends(get_db)
 ):
     return await status_crud.kill_dino(db, feed_body.github_name)
+
